@@ -12,10 +12,6 @@ namespace RobotsVsDinos
 
 
 
-
-
-
-
         //constuctor (SPAWNER)
         public Herd()
         {

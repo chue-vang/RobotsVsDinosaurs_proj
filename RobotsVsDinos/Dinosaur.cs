@@ -14,25 +14,19 @@ namespace RobotsVsDinos
         public int dinoEnergy;
         public int dinoAttackPower;
 
-
-
-
-
-
         //constuctor (SPAWNER)
         public Dinosaur(string typeOfDino, int dinoEnergy, int dinoAttackPower)
         {
             this.typeOfDino = typeOfDino;
             dinoHealth = 100;
             this.dinoEnergy = dinoEnergy;
-            this.dinoAttackPower = dinoAttackPower
+            this.dinoAttackPower = dinoAttackPower;
         }
 
-
-
-
-
-
         //member method (CAN DO)
+
+
+        //dinosaur have the ability to attack a robot
+
     }
 }

@@ -14,6 +14,11 @@ namespace RobotsVsDinos
             // Robot robot = new Robot("Robocop", "Gun", 25);
             //Console.WriteLine(robot2.weapon.weaponType);
             //Console.ReadLine();
+
+
+
+
+
         }
     }
 }
