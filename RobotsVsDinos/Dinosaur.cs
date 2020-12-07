@@ -27,6 +27,19 @@ namespace RobotsVsDinos
 
 
         //dinosaur have the ability to attack a robot
+        //each time a dinosaur attacks a robot, minus the attack from the robot's health point
 
+        public void DinosaurAttack(Robot robotBeingAttacked)
+        {
+            if (dinoAttackPower < robotBeingAttacked.robotHealth)
+            {
+                robotBeingAttacked.robotHealth -= dinoAttackPower;
+            }
+            else if (dinoAttackPower > robotBeingAttacked.robotHealth)
+            {
+                robotBeingAttacked.robotHealth = 0;
+                Console.WriteLine(robotBeingAttacked.nameOfRobot + " is KO'd.");
+            }
+        }
     }
 }

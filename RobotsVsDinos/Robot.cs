@@ -29,7 +29,6 @@ namespace RobotsVsDinos
 
         public void RobotAttack(Dinosaur dinoBeingAttacked)
         {
-
             if (weapon.weaponPower < dinoBeingAttacked.dinoHealth)
             {
                 dinoBeingAttacked.dinoHealth -= weapon.weaponPower;
@@ -38,8 +37,7 @@ namespace RobotsVsDinos
             {
                 dinoBeingAttacked.dinoHealth = 0;
                 Console.WriteLine(dinoBeingAttacked.typeOfDino + " is KO'd.");
-            }
-         
+            }     
         }
     }
 }
