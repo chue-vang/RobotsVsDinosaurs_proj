@@ -16,7 +16,9 @@ namespace RobotsVsDinos
             //Console.WriteLine(robot2.nameOfRobot);
             //Console.ReadLine();
 
-
+            Battlefield battlefield = new Battlefield();
+            battlefield.RunBattle();
+            Console.ReadLine();
 
 
         }

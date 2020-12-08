@@ -10,15 +10,19 @@ namespace RobotsVsDinos
     {
         //member variable (HAVE A)
 
-
-
+        public Herd herd;
+        public Fleet fleet;
 
 
 
 
         //constuctor (SPAWNER)
 
-
+        public Battlefield()
+        {
+            herd = new Herd();
+            fleet = new Fleet();
+        }
 
 
 
@@ -32,6 +36,17 @@ namespace RobotsVsDinos
         //when a robot or dinosaur loses all their HP, they will be KO'd
         //if a Herd of dinosaurs, or a Fleet of robots loses all their HP, the game is over
 
+        public void RunBattle()
+        {
+            Welcome();
+            herd.dinosaurs[0].DinosaurAttack(fleet.robots[0]);
+        }
+
+        public void Welcome()
+        {
+            Console.WriteLine("Welcome to the world of Robots vs Dinosaurs!");
+            Console.WriteLine(herd.dinosaurs[0].typeOfDino);
+        }
 
 
 

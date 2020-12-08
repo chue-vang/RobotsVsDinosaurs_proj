@@ -31,6 +31,8 @@ namespace RobotsVsDinos
 
         public void DinosaurAttack(Robot robotBeingAttacked)
         {
+            //Create a WriteLine that will display which dino is attacking which robot
+            Console.WriteLine("Hello there!");
             if (dinoAttackPower < robotBeingAttacked.robotHealth)
             {
                 robotBeingAttacked.robotHealth -= dinoAttackPower;
