@@ -18,9 +18,9 @@ namespace RobotsVsDinos
             robots = new List<Robot>();
             
 
-            Robot optimusPrime = new Robot("Optimus Prime", "Blaster", 90);
-            Robot atom = new Robot("Atom", "Iron Fists", 100);
-            Robot baymax = new Robot("Baymax", "Rocket Fists", 80);
+            Robot atom = new Robot("Atom", "Iron Fists", 60);
+            Robot optimusPrime = new Robot("Optimus Prime", "Blaster", 75);
+            Robot baymax = new Robot("Baymax", "Rocket Fists", 50);
 
             robots.Add(atom);
             robots.Add(optimusPrime);

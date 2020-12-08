@@ -32,7 +32,7 @@ namespace RobotsVsDinos
         public void DinosaurAttack(Robot robotBeingAttacked)
         {
             //Create a WriteLine that will display which dino is attacking which robot
-            Console.WriteLine(typeOfDino + " has an ATK POWER of " + dinoAttackPower + " and is attacking " + robotBeingAttacked.nameOfRobot + " who has " + robotBeingAttacked.robotHealth + " HP");
+            Console.WriteLine(typeOfDino + " has an ATK POWER of " + dinoAttackPower + " and ATTACKS " + robotBeingAttacked.nameOfRobot + " who has " + robotBeingAttacked.robotHealth + " HP");
             if (dinoAttackPower < robotBeingAttacked.robotHealth)
             {
                 robotBeingAttacked.robotHealth -= dinoAttackPower;
@@ -41,6 +41,7 @@ namespace RobotsVsDinos
             else if (dinoAttackPower >= robotBeingAttacked.robotHealth)
             {
                 robotBeingAttacked.robotHealth = 0;
+                 
                 Console.WriteLine(robotBeingAttacked.nameOfRobot + " is KO'd.");
             }
         }

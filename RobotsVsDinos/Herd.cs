@@ -20,9 +20,9 @@ namespace RobotsVsDinos
 
 
 
-            Dinosaur tRex = new Dinosaur("TRex", 75, 100);
-            Dinosaur velociraptor = new Dinosaur("Velociraptor", 90, 70);
-            Dinosaur spinosaurus = new Dinosaur("Spinosaurus", 80, 80);
+            Dinosaur tRex = new Dinosaur("TRex", 75, 60);
+            Dinosaur velociraptor = new Dinosaur("Velociraptor", 90, 50);
+            Dinosaur spinosaurus = new Dinosaur("Spinosaurus", 80, 70);
 
             dinosaurs.Add(tRex);
             dinosaurs.Add(velociraptor);
