@@ -9,7 +9,7 @@ namespace RobotsVsDinos
     class Battlefield
     {
         //member variable (HAVE A)
-        
+
 
 
 
@@ -26,12 +26,15 @@ namespace RobotsVsDinos
 
         //member method (CAN DO)
 
-        //three robots and three dinosaurs total
-        //a robot will have the ability to attack any dinosaur
-        //a dinosaur will have the ability to attack any robot
-        //each robot and dinosaur will have their own specific health point and attack power
-        //when a robot or dinosaur gets attacked, minus that attack power from their health
-        //if a dinosaur or robot loses all their health point, they can't fight anymore
-        //whenever the herd of dinos or fleet of robots loses all their health points, the game is over
+        //robots have the ability to attack a dinosaur on the battlefield
+        //dinosaurs have the ability to attack a robot on the battlefield
+        //if a robot attacks a dinosaur, the dinosaur will lose HP equivalent to the attack, and vice versa
+        //when a robot or dinosaur loses all their HP, they will be KO'd
+        //if a Herd of dinosaurs, or a Fleet of robots loses all their HP, the game is over
+
+
+
+
+        
     }
 }

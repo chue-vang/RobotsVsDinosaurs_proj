@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotsVsDinos
 {
-    class Dinosaur
+    public class Dinosaur
     {
         //member variable (HAVE A)
         public string typeOfDino;
