@@ -11,17 +11,13 @@ namespace RobotsVsDinos
         //member variable (HAVE A)
         public List<Dinosaur> dinosaurs;
 
-
         //constuctor (SPAWNER)
         public Herd()
         {
             dinosaurs = new List<Dinosaur>();
 
-
-
-
-            Dinosaur tRex = new Dinosaur("TRex", 75, 60);
-            Dinosaur velociraptor = new Dinosaur("Velociraptor", 90, 50);
+            Dinosaur tRex = new Dinosaur("TRex", 75, 50);
+            Dinosaur velociraptor = new Dinosaur("Velociraptor", 90, 40);
             Dinosaur spinosaurus = new Dinosaur("Spinosaurus", 80, 70);
 
             dinosaurs.Add(tRex);
@@ -29,13 +25,6 @@ namespace RobotsVsDinos
             dinosaurs.Add(spinosaurus);
         }
 
-
-
-
-
-
         //member method (CAN DO)
-        
-
     }
 }

@@ -22,25 +22,20 @@ namespace RobotsVsDinos
         }
 
         //member method (CAN DO)
-
-        //robots have the ability to attack a dinosaur
-        //each time a robot attacks a dinosaur, minus the robot's attack from the dino's health
-        //
-
         public void RobotAttack(Dinosaur dinoBeingAttacked)
         {
-            //Create a WriteLine that will display which dino is attacking which robot
-            Console.WriteLine(nameOfRobot + " has an ATK POWER of " + weapon.weaponPower + " and is attacking " + dinoBeingAttacked.typeOfDino + " with his " + weapon.weaponType + ", who has " + dinoBeingAttacked.dinoHealth + " HP");
+            //WriteLine that will display which dino is attacking which robot
+            Console.WriteLine(nameOfRobot + " has an ATK POWER of " + weapon.weaponPower + " and ATTACKS " + dinoBeingAttacked.typeOfDino + " with his " + weapon.weaponType + ", who has " + dinoBeingAttacked.dinoHealth + " HP.");
 
             if (weapon.weaponPower < dinoBeingAttacked.dinoHealth)
             {
                 dinoBeingAttacked.dinoHealth -= weapon.weaponPower;
-                Console.WriteLine(dinoBeingAttacked.typeOfDino + " has " + dinoBeingAttacked.dinoHealth + " HP left");
+                Console.WriteLine(nameOfRobot +"'s attack successfully hits " + dinoBeingAttacked.typeOfDino + "!!!  " + dinoBeingAttacked.typeOfDino + " only has " + dinoBeingAttacked.dinoHealth + " HP left.");
             }
             else if (weapon.weaponPower >= dinoBeingAttacked.dinoHealth)
             {
                 dinoBeingAttacked.dinoHealth = 0;
-                Console.WriteLine(dinoBeingAttacked.typeOfDino + " is KO'd.");
+                Console.WriteLine(dinoBeingAttacked.typeOfDino + " is KO'd!!!");
             }     
         }
     }

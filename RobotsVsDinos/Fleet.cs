@@ -11,28 +11,20 @@ namespace RobotsVsDinos
         //member variable (HAVE A)
         public List<Robot> robots;
         
-
         //constuctor (SPAWNER)
         public Fleet()
         {
             robots = new List<Robot>();
             
-
-            Robot atom = new Robot("Atom", "Iron Fists", 60);
+            Robot atom = new Robot("Atom", "Iron Fists", 70);
             Robot optimusPrime = new Robot("Optimus Prime", "Blaster", 75);
-            Robot baymax = new Robot("Baymax", "Rocket Fists", 50);
+            Robot baymax = new Robot("Baymax", "Rocket Fists", 60);
 
             robots.Add(atom);
             robots.Add(optimusPrime);
             robots.Add(baymax);
-
         }
-
         
-
-
         //member method (CAN DO)
-
-
     }
 }
