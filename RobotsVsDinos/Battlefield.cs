@@ -39,13 +39,17 @@ namespace RobotsVsDinos
         public void RunBattle()
         {
             Welcome();
+
+   
+
             herd.dinosaurs[0].DinosaurAttack(fleet.robots[0]);
+            fleet.robots[1].RobotAttack(herd.dinosaurs[0]);
         }
 
         public void Welcome()
         {
-            Console.WriteLine("Welcome to the world of Robots vs Dinosaurs!");
-            Console.WriteLine(herd.dinosaurs[0].typeOfDino);
+            Console.WriteLine("Welcome to the World of ROBOTS vs DINOSAURS!");
+
         }
 
 

@@ -20,7 +20,7 @@ namespace RobotsVsDinos
 
 
 
-            Dinosaur tRex = new Dinosaur("TRex", 75, 90);
+            Dinosaur tRex = new Dinosaur("TRex", 75, 100);
             Dinosaur velociraptor = new Dinosaur("Velociraptor", 90, 70);
             Dinosaur spinosaurus = new Dinosaur("Spinosaurus", 80, 80);
 
